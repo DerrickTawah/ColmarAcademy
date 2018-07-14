@@ -1,0 +1,125 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: left;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+  flex: 1;
+}
+
+header .logo span {
+  color: Black;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+header .logo .desktop {
+  color: gray;
+  letter-spacing: .1rem;
+}
+
+header .icon {
+  width: auto;
+  line-height: 2rem;
+}
+
+header .desktop ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .desktop li {
+  display: flex;
+  line-height: 2;
+  font-size: 1rem;
+  color: black;
+}
+
+
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 460px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+    height: 2rem;
+    display: flex;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 1.5rem;
+    line-height: 2;
+  }
+}
