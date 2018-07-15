@@ -5,6 +5,11 @@ html {
   font-size: 20px;
 }
 
+body {
+  width: 1280px;
+  border: 0;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -26,6 +31,16 @@ html {
 
 .image-container img {
   display: block;
+}
+
+a {
+	color: #464646;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #000099;
 }
 
 @media only screen and (max-width: 760px) {
@@ -139,15 +154,4 @@ header .mobile {
 .banner .header-image {
   padding: 1.6rem 1.2rem;
   width: 60%;
-}
-
-/*.content .right {
-  display: flex;
-  flex-direction: column;
-}*/
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
