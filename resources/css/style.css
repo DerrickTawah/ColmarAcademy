@@ -10,7 +10,7 @@ html {
   top: 5.3125rem; /* To offset for fixed header. */
 }
 
-.center {
+.content {
   text-align: left;
 }
 
@@ -41,7 +41,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 1;
-  height: 4rem;
+  height: 3.2rem;
   display: flex;
   align-items: center;
 }
@@ -49,14 +49,14 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 1.5rem;
+  padding-left: 1.6rem;
+  padding-right: 1.2rem;
 }
 
 header .logo {
   display: flex;
   align-items: center;
-  line-height: 2;
+  line-height: 1.6;
   flex: 1;
 }
 
@@ -73,7 +73,7 @@ header .logo .desktop {
 
 header .icon {
   width: auto;
-  line-height: 2rem;
+  line-height: 1.6;
 }
 
 header .desktop ul {
@@ -84,12 +84,10 @@ header .desktop ul {
 
 header .desktop li {
   display: flex;
-  line-height: 2;
+  line-height: 1.6;
   font-size: 1rem;
   color: black;
 }
-
-
 
 header .mobile {
   display: none;
@@ -107,7 +105,7 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
-    height: 2rem;
+    height: 1.6rem;
     display: flex;
   }
 
@@ -120,6 +118,36 @@ header .mobile {
 
   header .mobile li {
     padding: 1.5rem;
-    line-height: 2;
+    line-height: 1.6;
   }
+}
+
+/* Header Banner Section */
+
+#header-section {
+  display: flex;
+  width: 100%;
+  height: 30rem;
+}
+
+#header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .header-image {
+  padding: 1.6rem 1.2rem;
+  width: 60%;
+}
+
+/*.content .right {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
