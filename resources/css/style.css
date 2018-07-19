@@ -128,7 +128,7 @@ nav ul li a:hover {
   }
 }
 
-/* Page Content Ruleset */
+/* Page Content */
 .content .container:nth-child(2n+1) {
   background-color: #d3d3d3;
 }
@@ -264,7 +264,6 @@ nav ul li a:hover {
 .content-left .img-container {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -591,7 +590,7 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.content-right .img-container {
+#for-companies .content-right .img-container {
   width: 35%;
   padding: 1rem;
 }
@@ -677,22 +676,32 @@ nav ul li a:hover {
 }
 
 /* Footer section*/
-footer .container {
-  display: flex;
-  flex-direction: row;
-  border-top: 1px solid #d3d3d3;
-  align-items: center;
-  font-size: 0.75rem;
+
+footer {
+  height: 3.675rem;
 }
 
-footer span {
+footer .container {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: flex-start;
   flex-grow: 1;
 }
 
 footer nav ul {
   display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
-footer nav ul li {
-  padding-left: 1rem;
+@media only screen and (min-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
 }
