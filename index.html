@@ -14,34 +14,40 @@
   <body>
 
   <!-- Header -->
-  <header class="container" role="presentation">
+  <div class="container" role="presentation">
+    <header>
 
-    <!--logo-->
-    <div class="logo" role="presentation">
-      <div class="img-container" role="presentation">
-        <a href="index.html"><img src="./resources/assets/images/ic-logo.svg" alt="colmar academy logo"></a>
+      <div class="header">
+        <div class="logo" role="presentation">
+          <div class="img-container" role="presentation">
+            <a href="index.html"><img src="./resources/assets/images/ic-logo.svg" alt="colmar academy logo"></a>
+          </div>
+          <a href="index.html"><span class="bold">COLMAR</span>
+          <span class="light">ACADEMY</span></a>
+        </div>
+
+        <!--desktop navigation-->
+        <nav class="desktop">
+          <ul class="navigation">
+            <li><a href="#on-campus">On campus</a></li>
+            <li><a href="#online">Online</a></li>
+            <li><a href="#companies">For companies</a></li>
+            <li><a href="#sign-in">Sign in</a></li>
+          </ul>
+        </nav>
+
+        <!--mobile navigation-->
+        <div class="mobile" role="navigation">
+          <a href="#on-campus"><img src="./resources/assets/images/ic-on-campus.svg" alt="colmar academy campus"></a>
+          <a href="#online"><img src="./resources/assets/images/ic-online.svg" alt="Colmar academy online"></a>
+          <a href="#sign-in"><img src="./resources/assets/images/ic-login.svg" alt="sign in to colmar academy"></a>
+        </div>
       </div>
-      <a href="index.html"><span class="bold">COLMAR</span>
-      <span class="light">ACADEMY</span></a>
+
+    </header>
     </div>
 
-    <!--desktop navigation-->
-    <nav class="desktop">
-      <ul class="navigation">
-        <li><a href="#on-campus">On campus</a></li>
-        <li><a href="#online">Online</a></li>
-        <li><a href="#for-companies">For companies</a></li>
-        <li><a href="#sign-in">Sign in</a></li>
-      </ul>
-    </nav>
 
-    <!--mobile navigation-->
-    <div class="mobile" role="navigation">
-      <a href="#on-campus"><img src="./resources/assets/images/ic-on-campus.svg" alt="colmar academy campus"></a>
-      <a href="#online"><img src="./resources/assets/images/ic-online.svg" alt="Colmar academy online"></a>
-      <a href="#sign-in"><img src="./resources/assets/images/ic-login.svg" alt="sign in to colmar academy"></a>
-    </div>
-  </header>
 
   <!-- Main Content -->
   <div class="content" role="presentation">
@@ -77,7 +83,7 @@
           <div class="img-container" role="presentation">
             <img src="./resources/assets/images/information-orientation.jpg" alt="Orientation Date">
           </div>
-          <div class="infos" role="presentation">
+          <div class="info" role="presentation">
             <h3 class="sub-title">Orientation date</h3>
             <p class="description">Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <a href="#"><span class="read-more" role="presentation">Read more</span></a>
@@ -87,7 +93,7 @@
           <div class="img-container" role="presentation">
             <img src="./resources/assets/images/information-campus.jpg" alt="our campus">
           </div>
-          <div class="infos">
+          <div class="info">
             <h3 class="sub-title">Our campus</h3>
             <p class="description">Find which campus is close to you</p>
             <a href="#"><span class="read-more">Read more</span></a>
@@ -97,7 +103,7 @@
           <div class="img-container" role="presentation">
             <img src="./resources/assets/images/information-guest-lecture.jpg" alt="guest lecturer">
           </div>
-          <div class="infos" role="presentation">
+          <div class="info" role="presentation">
             <h3 class="sub-title">Our guest lecture</h3>
             <p class="description">Join the keynote with Oliver Sack about music in medical treatment</p>
             <a href="#"><span class="read-more" role="presentation">Read more</span></a>
@@ -178,44 +184,44 @@
     </div>
 
     <!--for companies-->
-    <div id="for-companies" class="thesis container" role="presentation">
+    <div id="companies" class="container" role="presentation">
       <h1>Thesis exhibit</h1>
 
       <!--Main thesis section-->
-      <div class="content-left" role="presentation">
-        <div class="video-block" role="presentation">
-          <div class="video-container" role="presentation">
-            <video src="./resources/assets/videos/thesis.mp4"  controls></video>
-          </div>
-          <h2 class="video-title">Reimagine urban</h2>
-          <p class="video-description">"Curabitur vitae libero in ipsum porttitor consequat.
-            Aliquam et commodo lectus, nec consequat neque.
-            Sed non accumsan urna. Phasellus sed consequat ex.
-            Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"
-          </p>
+      <div class="thesis" role="presentation">
+        <div class="video" role="presentation">
+            <div class="video-container" role="presentation">
+              <video src="./resources/assets/videos/thesis.mp4"  controls></video>
+            </div>
+            <h2 class="title">Reimagine urban</h2>
+            <p class="description">"Curabitur vitae libero in ipsum porttitor consequat.
+              Aliquam et commodo lectus, nec consequat neque.
+              Sed non accumsan urna. Phasellus sed consequat ex.
+              Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"
+            </p>
+        </div>
+        <div class="thesis-info">
+          <div class="info" role="presentation">
+              <div class="img-container" role="presentation">
+                <img src="./resources/assets/images/thesis-fisma.jpg" alt="Fisma thesis">
+              </div>
+              <div class="description" role="presentation">
+                <h3>Fisma: Design and Prototype</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </div>
+            <div class="info" role="presentation">
+              <div class="img-container" role="presentation">
+                <img src="./resources/assets/images/thesis-now-and-then.jpg" alt="Now and then thesis">
+              </div>
+              <div class="description" role="presentation">
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="content-right" role="presentation">
-        <div class="info prisma" role="presentation">
-          <div class="img-container" role="presentation">
-            <img src="./resources/assets/images/thesis-fisma.jpg" alt="Fisma thesis">
-          </div>
-          <div class="thesis-description" role="presentation">
-            <h3 class="sub-title">Fisma: Design and Prototype</h3>
-            <p class="description">Designer showcase of new prototype product</p>
-          </div>
-        </div>
-        <div class="info now-and-then" role="presentation">
-          <div class="img-container" role="presentation">
-            <img src="./resources/assets/images/thesis-now-and-then.jpg" alt="Now and then thesis">
-          </div>
-          <div class="thesis-description" role="presentation">
-            <h3 class="sub-title">Now and then</h3>
-            <p class="description">Research study about New York</p>
-          </div>
-        </div>
       </div>
-    </div>
 
 
   <!--footer section-->
