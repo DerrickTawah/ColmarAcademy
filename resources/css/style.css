@@ -32,9 +32,9 @@ body {
   font-weight: 900;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .container {
-    border: none;
+    border-left: none;
     border-bottom: 1px solid #d3d3d3;
   }
 }
@@ -115,7 +115,7 @@ nav ul li a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
 
   .logo {
     width: 30%;
@@ -213,7 +213,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .header-banner {
     width: 100%;
     flex-flow: column;
@@ -381,7 +381,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .information {
     flex-flow: column;
   }
@@ -453,7 +453,7 @@ nav ul li a:hover {
 /* online section*/
 
 .course.container {
-    padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .course h1 {
@@ -530,7 +530,7 @@ nav ul li a:hover {
   margin: 0.5rem 1rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .course-info {
     width: 45%;
   }
@@ -600,7 +600,7 @@ nav ul li a:hover {
 /* for companies */
 
 #companies.container {
- padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 #companies h1 {
@@ -609,7 +609,6 @@ nav ul li a:hover {
   margin: 2rem 0;
   font-size: 2.5rem;
   font-weight: 900;
-
 }
 
 .thesis {
@@ -618,11 +617,25 @@ nav ul li a:hover {
   padding: 2rem 1.5rem;
 }
 
-.thesis.video {
+.video {
   display: flex;
   flex-flow: column;
   width: 60%;
   height: auto;
+}
+
+.thesis-info {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 40%;
+}
+
+.thesis1 {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .video h2 {
@@ -646,11 +659,6 @@ nav ul li a:hover {
 video {
   width: 100%;
   height: auto;
-}
-
-.thesis-info {
-  display: flex;
-  width: 40%;
 }
 
 .thesis-info.description {
@@ -677,7 +685,6 @@ video {
 }
 
 
-
 .thesis-info .info:hover {
   background-color: #a0c7dc;
 }
@@ -690,7 +697,7 @@ video {
   background-color: whitesmoke;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   #for-companies h2 {
     display: none;
   }
