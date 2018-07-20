@@ -84,7 +84,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #a0c7dc;
+  font-weight: bold;
+  font-size: 900;
+  color: whitesmoke;
+  background-color: green;
+  background-size: auto;
+  padding: 0.5rem;
 }
 
 .bold {
@@ -194,7 +199,7 @@ nav ul li a:hover {
 }
 
 .button:hover {
-  background-color: #a0c7dc;
+  background-color: #ff6347;
   cursor: pointer;
 }
 
@@ -291,9 +296,7 @@ nav ul li a:hover {
 
 .content-right {
   display: flex;
-  flex-flow: column;
   width: 40%;
-  height: auto;
   margin-right: -1.5rem;
   border-left: 1px solid #d3d3d3;
   margin-left: 1.5rem;
@@ -337,23 +340,19 @@ nav ul li a:hover {
   height: auto;
 }
 
-.campus .infos {
+.campus .info {
   width: 65%;
-  display: flex;
-  flex-flow: row;
   margin-left: 1rem;
 }
 
-
-
-.campus .infos h3 {
+.campus .info h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.campus .infos h3,
-.campus .infos p,
-.campus .infos span {
+.campus .info h3,
+.campus .info p,
+.campus .info span {
   margin: 0.5rem 0;
 }
 
@@ -451,6 +450,7 @@ nav ul li a:hover {
   margin: 2rem 0;
   padding: 0 4.5rem;
 }
+
 .courses .type {
   text-transform: uppercase;
 }
@@ -466,8 +466,31 @@ nav ul li a:hover {
   transition-duration: .5s;
 }
 
-.course-info:hover {
+.course-info.software-engineering:hover {
   background-color: #a0c7dc;
+}
+
+.course-info.computer-art:hover {
+  background-color: #ff6347;
+  color: whitesmoke;
+}
+
+.course-info.design:hover {
+  background-color: #a7d84f;
+}
+
+.course-info.data:hover {
+  background-color: #eac011;
+}
+
+.course-info.business:hover {
+  background-color: #c3ee63;
+  color: #36454f;
+}
+
+.course-info.marketing:hover {
+  background-color: #c471ea;
+  color: whitesmoke;
 }
 
 .course-info .course-img {
@@ -503,7 +526,7 @@ nav ul li a:hover {
   }
 
   .courses {
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     padding: 0;
     margin: 0;
     justify-content: center;
@@ -572,17 +595,17 @@ nav ul li a:hover {
   font-weight: 900;
 }
 
-#for-companies .content-left {
+#for-companies .container-left {
   display: flex;
   flex-flow: column;
   width: 60%;
 }
 
-#for-companies .content-right{
+#for-companies .container-right {
   display: flex;
 }
 
-.content-right .info {
+.container-right .info {
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
@@ -590,28 +613,28 @@ nav ul li a:hover {
   width: 100%;
 }
 
-#for-companies .content-right .img-container {
+#for-companies .container-right .img-container {
   width: 35%;
   padding: 1rem;
 }
 
-.content-right .img-container img {
+.container-right .img-container img {
   width: 100%;
 }
 
-.content-right .thesis-description {
+.container-right .thesis-description {
   width: 65%;
 
 }
 
-.content-right h3 {
+.container-right h3 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.content-left h2 {
+.container-left h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -633,12 +656,12 @@ nav ul li a:hover {
   height: auto;
 }
 
-#for-companies .content-right {
+#for-companies .container-right {
   margin-top: 0;
   border-left: none;
 }
 
-#for-companies .content-right .info:hover {
+#for-companies .container-right .info:hover {
   background-color: #a0c7dc;
 }
 
@@ -670,7 +693,7 @@ nav ul li a:hover {
     padding: 0;
   }
 
-  #for-companies .content-right {
+  #for-companies .container-right {
     display: none;
   }
 }
